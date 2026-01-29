@@ -1,18 +1,13 @@
 # load packages ----
 library(tidyverse)
-library(cowplot)
 library(ggplot2)
 library(ggrepel)
-library(patchwork)
 library(Seurat)
 library(SeuratWrappers)
 library(SeuratDisk)
 options(Seurat.object.assay.version = "v5")
-library(reticulate)
-use_condaenv("cytotrace")
 library(CytoTRACE)
 library(monocle3)
-options(future.globals.maxSize = 1e10)
 
 # load data
 seu2 <- readRDS(file = "RDSfiles/seu2.RDS")

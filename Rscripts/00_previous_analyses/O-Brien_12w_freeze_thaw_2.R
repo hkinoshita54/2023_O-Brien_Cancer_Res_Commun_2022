@@ -62,6 +62,8 @@ FeaturePlot(seu12wft,features = "Atp4b", cols = c("lightgrey","darkred"), label 
 FeaturePlot(seu12wft,features = "Mki67", cols = c("lightgrey","darkred"), label = TRUE, repel = TRUE) + NoAxes() + NoLegend()
 FeaturePlot(seu12wft,features = "Stmn1", cols = c("lightgrey","darkred"), label = TRUE, repel = TRUE) + NoAxes() + NoLegend()
 FeaturePlot(seu12wft,features = "Cd44", cols = c("lightgrey","darkred"), label = TRUE, repel = TRUE) + NoAxes() + NoLegend()
+FeaturePlot(seu12wft,features = "Lgr4", cols = c("lightgrey","darkred"), label = TRUE, repel = TRUE) + NoAxes() + NoLegend()
+FeaturePlot(seu12wft,features = "Lgr5", cols = c("lightgrey","darkred"), label = TRUE, repel = TRUE) + NoAxes() + NoLegend()
 
 # save data for RNA velocity ----
 # save metadata table

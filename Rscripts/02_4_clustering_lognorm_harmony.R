@@ -25,9 +25,9 @@ seu <- IntegrateLayers(
   object = seu, method = HarmonyIntegration,
   orig.reduction = "pca", 
   new.reduction = "harmony")
-seu <- FindNeighbors(seu, dims = 1:20, verbose = FALSE)
-seu <- FindClusters(seu, resolution = 1, verbose = FALSE)
-seu <- RunUMAP(seu, dims = 1:20, verbose = FALSE)
+seu <- FindNeighbors(seu, reduction = "harmony", dims = 1:20, verbose = FALSE)
+seu <- FindClusters(seu, reduction = "harmony", resolution = 1, verbose = FALSE)
+seu <- RunUMAP(seu, reduction = "harmony", dims = 1:20, verbose = FALSE)
 DimPlot(seu, label = TRUE, repel = TRUE) + NoAxes()
 ggsave("cluster.png", path = "plots/04_lognorm_harmony", width = 5, height = 5, units = "in", dpi = 150)
 DimPlot(seu, group.by = "orig.ident") + NoAxes()
